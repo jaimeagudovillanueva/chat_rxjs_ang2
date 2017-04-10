@@ -1,0 +1,13 @@
+<table class="table table-hover">
+    <tr [ngClass]="{'active': !incoming, 'success': incoming}" >
+        <td>
+              <img src="{{message.author.avatarSrc}}">
+        </td>
+        <td>
+            <p>{{message.text}}</p>
+            <p class="time">{{message.sender}} • {{message.sentAt | fromNow}}</p>
+        </td>
+    </tr>
+</table>
+
+

@@ -1,0 +1,12 @@
+<div class="media conversation">
+    <div class="pull-left">
+        <img class="thumbnail" src="{{thread.avatarSrc}}">
+    </div>
+    <div class="media-body">
+        <h5 class="media-heading contact-name">{{thread.name}}
+            <span class="glyphicon glyphicon-user" *ngIf="selected"></span>
+        </h5>
+        <small class="message-preview">{{thread.lastMessage.text}}</small>
+    </div>
+    <button class="btn-primary" (click)="clicked($event)">Charlar</button>
+</div>
